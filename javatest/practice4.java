@@ -26,6 +26,5 @@ public class practice4 {
         // System.out.println(blank);
         // 查询集合的大小
         System.out.println(blank.size());
-
     }
 }
