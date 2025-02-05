@@ -1,4 +1,5 @@
-package javatest;
+package String;
+
 import java.util.Scanner;
 import java.util.StringJoiner;
 public class StringPractise {
