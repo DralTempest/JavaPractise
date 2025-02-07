@@ -26,4 +26,16 @@ public class EmployeeClass {
         System.out.println("薪资: " + salary);
         System.out.println("职位: " + position);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public String getPosition() {
+        return position;
+    }
 }
