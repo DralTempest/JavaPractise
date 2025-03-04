@@ -11,8 +11,12 @@ public class Manager extends EmployeeClass {
     public int getExtraSalary() {
         return extraSalary;
     }
-
     public void setExtraSalary(int extraSalary) {
         this.extraSalary = extraSalary;
+    }
+
+    @Override
+    public void setPosition(String position){
+        super.setPosition(position + "6666");
     }
 }

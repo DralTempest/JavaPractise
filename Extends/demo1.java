@@ -20,6 +20,12 @@ public class demo1 {
         Manager manager = new Manager("luck",20000,"Manager");
         managers.add(manager);
         managers.get(3).displayInformation();
-
+        printLine(managers.get(0));
+    }
+    //多态的方式传入对象并在测试类调用静态方法
+    public static void printLine(EmployeeClass e){
+        System.out.println("-------------");
+        e.displayInformation();
+        System.out.println("-------------");
     }
 }
