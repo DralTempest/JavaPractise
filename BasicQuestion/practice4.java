@@ -1,6 +1,7 @@
 package javatest;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 public class practice4 {
     public static void main(String[] args) {
@@ -26,5 +27,15 @@ public class practice4 {
         // System.out.println(blank);
         // 查询集合的大小
         System.out.println(blank.size());
+
+        // 合并集合
+        List <String> ListAll = new ArrayList <>(electronics);
+        ListAll.addAll(clothing);
+        System.out.println(ListAll);
+        Iterator it = ListAll.iterator();
+        while (it.hasNext()) {
+            String str = (String) it.next();
+            System.out.println(str);
+        }
     }
 }
