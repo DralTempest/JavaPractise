@@ -3,11 +3,12 @@ package File;
 import java.io.Serializable;
 
 public class FileObject implements Serializable {
-    private  static final  int FileNum = 0;
+    private static final long serialVersionUID = 1L;
+    private static final int FileNum = 0;
     private String FileName;
     private String FileType;
     private String FileUser;
-
+    private String order;
     public FileObject(){
     }
     public FileObject(String FileName, String FileType, String FileUser){
@@ -42,7 +43,7 @@ public class FileObject implements Serializable {
     @Override
     public String toString() {
         return "FileObject [FileName=" + FileName + ", FileType=" + FileType + ", FileUser="
-                + FileUser + "]";
+                + FileUser + " Order = " + order + "]";
     }
     public void DisplayFile(){
         System.out.println(this.FileName);
